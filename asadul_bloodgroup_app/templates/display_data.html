@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Data</title>
+</head>
+<body>
+
+  <ul>
+    {% for item in data %}
+    <li>
+      {{ item.name}} ||
+      {{ item.number}}||
+      {{ item.address}}||
+      {{ item.blood_group}}||
+      {{ item.donation_date}}
+    </li>
+    {% endfor %}
+  </ul>
+  
+</body>
+</html>

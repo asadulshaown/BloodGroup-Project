@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registar</title>
+</head>
+<body>
+  <h1 align="center">Registar Here</h1>
+  <form  method="post" align="center">
+    {% csrf_token %}
+    name: <input type="text" name="name" ><br><br>
+    number: <input type="number" name="number" ><br><br>
+    address: <input type="text" name="address" ><br><br>
+    blood_group: <input type="text" name="blood_group" ><br><br>
+    donation_date: <input type="date" name="donation_date" ><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
